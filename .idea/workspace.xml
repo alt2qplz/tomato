@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71e9393f-9024-4045-9a1d-540969cf7e9b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Buttons.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pomodoro/TimerComponents/Buttons.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pomodoro.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pomodoro/Pomodoro.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TimePicker.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pomodoro/TimerComponents/TimePicker.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TimerCircle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pomodoro/TimerComponents/TimerCircle.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/style.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/pomodoro-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/pomodoro-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store/store.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +25,12 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\tomato\src\components\Pomodoro\TimerComponents" />
+      <recent name="C:\tomato\src\components\Pomodoro" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -47,7 +56,7 @@
       <updated>1592985604092</updated>
       <workItem from="1592985605218" duration="97000" />
       <workItem from="1592985726829" duration="103000" />
-      <workItem from="1592985845871" duration="663000" />
+      <workItem from="1592985845871" duration="4850000" />
     </task>
     <servers />
   </component>

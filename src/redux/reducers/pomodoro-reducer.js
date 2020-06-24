@@ -1,22 +1,21 @@
-// action types
+// actions
 
-const START_TIMER = 'pomodoro/START'
-const STOP_TIMER = 'pomodoro/STOP'
-const RESET_TIMER = 'pomodoro/RESET_TIMER'
-const TOGGLE_TIMER_TYPE = 'pomodoro/TOGGLE_TIMER_TYPE'
-const SET_WORK_INTERVAL = 'pomodoro/SET_WORK_INTERVAL'
-const SET_RELAX_INTERVAL = 'pomodoro/SET_RELAX_INTERVAL'
-const SESSION_DONE ='pomodoro/SESSION_DONE'
+const START_TIMER = "pomodoro/START"
+const STOP_TIMER = "pomodoro/STOP"
+const RESET_TIMER = "pomodoro/RESET_TIMER"
+const TOGGLE_TIMER_TYPE = "pomodoro/TOGGLE_TIMER_TYPE"
+const SET_WORK_INTERVAL = "pomodoro/SET_WORK_INTERVAL"
+const SET_RELAX_INTERVAL = "pomodoro/SET_RELAX_INTERVAL"
+const SESSION_DONE = "pomodoro/SESSION_DONE"
 
 // initial state
 
 const initialState = {
     workInterval: 900,
     relaxInterval: 300,
-    timerType: 'work',
+    timerType: "work",
     isActive: false,
-    isDone: false,
-    pomodoro: 0
+    isDone: false
 }
 
 // reducer
@@ -52,7 +51,7 @@ const pomodoroReducer = (state = initialState, action) => {
         case RESET_TIMER: {
             return {
                 ...state,
-                timerType: 'work',
+                timerType: "work",
                 startTime: 0,
                 stopTime: 0,
                 isActive: false,
@@ -63,7 +62,7 @@ const pomodoroReducer = (state = initialState, action) => {
         case TOGGLE_TIMER_TYPE: {
             return {
                 ...state,
-                timerType: state.timerType === 'work' ? 'relax' : 'work'
+                timerType: state.timerType === "work" ? "relax" : "work"
             }
         }
 

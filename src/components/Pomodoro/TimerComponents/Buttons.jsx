@@ -1,8 +1,8 @@
 import React from "react"
-import {Button, Col, Row} from "antd";
-import CaretRightOutlined from "@ant-design/icons/lib/icons/CaretRightOutlined";
-import RedoOutlined from "@ant-design/icons/lib/icons/RedoOutlined";
-import PauseOutlined from "@ant-design/icons/lib/icons/PauseOutlined";
+import {Button, Col, Row} from "antd"
+import CaretRightOutlined from "@ant-design/icons/lib/icons/CaretRightOutlined"
+import RedoOutlined from "@ant-design/icons/lib/icons/RedoOutlined"
+import PauseOutlined from "@ant-design/icons/lib/icons/PauseOutlined"
 
 const Buttons = props => {
   return <Row justify="space-between" gutter={[8, 8]} style={{ marginTop: 24 }}>
@@ -22,4 +22,4 @@ const Buttons = props => {
   </Row>
 }
 
-export default Buttons;
+export default Buttons

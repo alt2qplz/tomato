@@ -7,25 +7,24 @@ import {
   startTimer,
   stopTimer,
   toggleTimer
-} from "../redux/reducers/pomodoro-reducer"
-import './style.css'
-import 'antd/dist/antd.css';
-import TimePicker from "./TimePicker";
-import TimerCircle from "./TimerCircle";
-import Buttons from "./Buttons";
-import {Col, Row} from "antd";
+} from "../../redux/reducers/pomodoro-reducer"
+import "antd/dist/antd.css"
+import TimePicker from "./TimerComponents/TimePicker"
+import TimerCircle from "./TimerComponents/TimerCircle"
+import Buttons from "./TimerComponents/Buttons"
 
 const Pomodoro = props => {
 
-  const [seconds, setSeconds] = useState(props.workInterval);
+  const [seconds, setSeconds] = useState(props.workInterval)
 
   useEffect(() => {
+    // Основная логика таймера
     let interval;
-    if (props.isActive && seconds === 0 && props.timerType === 'work') {
+    if (props.isActive && seconds === 0 && props.timerType === "work") {
       setSeconds(props.relaxInterval)
       props.toggleTimer()
       props.startTimer()
-    } else if (props.isActive && seconds === 0 && props.timerType === 'relax') {
+    } else if (props.isActive && seconds === 0 && props.timerType === "relax") {
       setSeconds(props.workInterval)
       props.toggleTimer()
       clearInterval(interval)
@@ -58,7 +57,7 @@ const Pomodoro = props => {
     let workInterval = e * 60
     props.setWorkInterval(workInterval)
 
-    if (props.timerType === 'work') {
+    if (props.timerType === "work") {
       setSeconds(workInterval)
     }
 
@@ -68,13 +67,13 @@ const Pomodoro = props => {
     let relaxInterval = e * 60
     props.setRelaxInterval(relaxInterval)
 
-    if (props.timerType === 'relax') {
+    if (props.timerType === "relax") {
       setSeconds(relaxInterval)
     }
   }
 
-  return <div className={'mainWrapper'}>
-      <div className={'whiteContainer'}>
+  return <div className={"mainWrapper"}>
+      <div className={"whiteContainer"}>
         <TimePicker workInterval={props.workInterval}
                     relaxInterval={props.relaxInterval}
                     setWorkInterval={setWorkInterval}
