@@ -6,9 +6,7 @@ http://pomodoro.savelichev.ru/
 
 
 
-Основной стек: **React + Redux**
-
-Сборщик: **Create-React-App**
+Стек: **React + Redux**
 
 Дизайн: **Ant Design**
 
